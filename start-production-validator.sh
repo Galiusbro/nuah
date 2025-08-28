@@ -96,10 +96,9 @@ start_production_validator() {
         --gossip-port 8001 \
         --dynamic-port-range 8000-8020 \
         --no-wait-for-vote-to-start-leader \
-        --log - > production-validator.log 2>&1 &
+        --log - > production-validator.log 2>&1 & echo $! > production-validator.pid
     
-    local pid=$!
-    echo "$pid" > production-validator.pid
+    local pid=$(cat production-validator.pid)
     
     log_success "Production валидатор запущен с PID: $pid"
     log_info "Логи: tail -f production-validator.log"
