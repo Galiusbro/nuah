@@ -95,7 +95,6 @@ start_production_validator() {
         --enable-rpc-transaction-history \
         --gossip-port 8001 \
         --dynamic-port-range 8000-8020 \
-        --expected-genesis-hash "$genesis_hash" \
         --no-wait-for-vote-to-start-leader \
         --log - > production-validator.log 2>&1 &
     
