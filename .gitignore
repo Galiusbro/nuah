@@ -33,7 +33,8 @@ log-*/
 
 # Blockchain ledger and database files (large files that shouldn't be committed)
 production-ledger/
-ledger/
+ledger/target/
+ledger/farf/
 ledger-2/
 test-ledger/
 *.sst
