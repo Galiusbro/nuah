@@ -121,11 +121,9 @@ start_faucet() {
     pkill -f "solana-faucet" || true
     sleep 2
     
-    # Запускаем faucet
+    # Запускаем faucet (версия 2.0.0 не поддерживает --port и --bind-address)
     nohup ./target/release/solana-faucet \
-        --keypair faucet-keypair.json \
-        --port 9900 \
-        --bind-address 0.0.0.0 > faucet.log 2>&1 &
+        --keypair faucet-keypair.json > faucet.log 2>&1 &
     
     local pid=$!
     echo "$pid" > faucet.pid
