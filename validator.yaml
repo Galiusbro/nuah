@@ -1,0 +1,9 @@
+json_rpc_url: "http://127.0.0.1:8899"
+websocket_url: "ws://127.0.0.1:8900"
+keypair_path: validator-keypair.json
+address_labels:
+  "11111111111111111111111111111111": "System Program"
+  "4HsF1TZVyGRrgbHb1VqG7jTSggJfuKZUBczzAhhXcgNr": "Validator Identity"
+  "CdouXV7MkywK3PrCj8eZBTxXG9NvzMCgNnaqGURvmJyX": "Vote Account"
+  "8Hxncg3ZZ69xhVTnwb3CfTCdHk5KDAra37wszXWya69J": "Stake Account"
+commitment: confirmed

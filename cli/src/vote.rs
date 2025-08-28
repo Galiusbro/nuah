@@ -334,7 +334,7 @@ impl VoteSubCommands for App<'_, '_> {
                     Arg::with_name("lamports")
                         .long("lamports")
                         .takes_value(false)
-                        .help("Display balance in lamports instead of SOL"),
+                        .help("Display balance in lamports instead of NUAH"),
                 )
                 .arg(
                     Arg::with_name("with_rewards")

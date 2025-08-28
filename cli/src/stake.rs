@@ -526,7 +526,7 @@ impl StakeSubCommands for App<'_, '_> {
                         .takes_value(true)
                         .validator(is_amount)
                         .required(true)
-                        .help("The amount to move into the new stake account, in SOL"),
+                        .help("The amount to move into the new stake account, in NUAH"),
                 )
                 .arg(
                     Arg::with_name("seed")
@@ -553,7 +553,7 @@ impl StakeSubCommands for App<'_, '_> {
                         .requires("sign_only")
                         .help(
                             "Offline signing only: the rent-exempt amount to move into the new \
-                             stake account, in SOL",
+                             stake account, in NUAH",
                         ),
                 ),
         )
@@ -761,7 +761,7 @@ impl StakeSubCommands for App<'_, '_> {
                     Arg::with_name("lamports")
                         .long("lamports")
                         .takes_value(false)
-                        .help("Display balance in lamports instead of SOL"),
+                        .help("Display balance in lamports instead of NUAH"),
                 )
                 .arg(
                     Arg::with_name("with_rewards")
@@ -797,7 +797,7 @@ impl StakeSubCommands for App<'_, '_> {
                     Arg::with_name("lamports")
                         .long("lamports")
                         .takes_value(false)
-                        .help("Display balance in lamports instead of SOL"),
+                        .help("Display balance in lamports instead of NUAH"),
                 )
                 .arg(
                     Arg::with_name("limit")
@@ -819,7 +819,7 @@ impl StakeSubCommands for App<'_, '_> {
                     Arg::with_name("lamports")
                         .long("lamports")
                         .takes_value(false)
-                        .help("Display minimum delegation in lamports instead of SOL"),
+                        .help("Display minimum delegation in lamports instead of NUAH"),
                 ),
         )
     }
